@@ -466,11 +466,7 @@ if (has_ggrepel) {
 }
 
 fig5_file <- paste0(paths$figures_dir, "fig.bycountry.coverage-vs-reduction.jpg")
-save_figure_data(
-  cdat %>%
-    dplyr::select(-dplyr::any_of(c("label_me", "effect_abs"))),
-  fig5_file
-)
+save_figure_data(cdat, fig5_file)
 ggsave(plot = p5, fig5_file, width = 11, height = 10, units = "cm", dpi = 300)
 cat("Saved:", fig5_file, "\n")
 }

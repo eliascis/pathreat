@@ -155,7 +155,7 @@ Set the number of worker processes with `PATHREAT_CORES` (default: all but one c
 | `pathreat.analysis.statistics.csv` / `.txt` | Headline statistics quoted in the paper |
 | `MANIFEST.csv` | Rows, columns, size and md5 of the canonical `.Rds` tables and their CSV twins |
 
-The CSV of `pathreat.sfa.est` is a subset that omits the PA size and IUCN category columns copied from the WDPA; the `.Rds` versions of the SFA tables retain them because the aggregation scripts need PA area.
+The CSV of `pathreat.sfa.est` is a subset that omits the PA size and IUCN category columns copied from the WDPA; the `.Rds` versions of the SFA tables retain them because the aggregation scripts need PA area, and the fitted models in `pathreat.sfa.models.est.Rds` carry log PA area in their model frames.
 
 ## Citation
 

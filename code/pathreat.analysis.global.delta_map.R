@@ -336,6 +336,8 @@ p_country <- p_country +
 
 out_path2 <- paste0(paths$figures_dir, "fig.delta_map.country.jpg")
 est_tc$coef_bin <- as.character(cut(est_tc$coef_pct, breaks = brks_c, labels = labs_c))
+# countries whose GADM code has no Natural Earth polygon are estimated but not drawn
+est_tc$on_map <- est_tc$gid_0 %in% world$adm0_a3
 save_figure_data(est_tc, out_path2)
 ggsave(out_path2, p_country, width = 10, height = 5, dpi = 300, bg = "white")
 cat("  Saved to:", out_path2, "\n")
