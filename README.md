@@ -168,7 +168,7 @@ The CSV of `pathreat.sfa.est` is a subset that omits the PA size and IUCN catego
 
 ## Citation
 
-Please cite the paper and the software record (see `CITATION.cff`). Zenodo concept DOI (always the latest release): `10.5281/zenodo.23108161`. The snapshot submitted with the manuscript is release `v1.0.0`, version DOI `10.5281/zenodo.23108162`.
+Please cite the paper and the software record (see `CITATION.cff`). Zenodo concept DOI (always the latest release): `10.5281/zenodo.23108161`. The snapshot submitted with the manuscript is release `v1.0.1`; each release has its own version DOI, listed on the Zenodo record.
 
 ## Licence
 
