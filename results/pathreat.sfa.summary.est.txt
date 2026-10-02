@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------
+Normal-Half Normal SF Model
+Dependent Variable:                                                 tc_protected
+Log likelihood solver:                                         BFGS maximization
+Log likelihood iter:                                                          89
+Log likelihood value:                                                25831.03869
+Log likelihood gradient norm:                                        4.26802e-04
+Estimation based on:                                       N =  22090 and K =  5
+Inf. Cr:                                       AIC  =  -51652.1 AIC/N  =  -2.338
+                                               BIC  =  -51612.1 BIC/N  =  -2.336
+                                               HQIC =  -51639.0 HQIC/N =  -2.338
+--------------------------------------------------------------------------------
+Variances: Sigma-squared(v)   =                                          0.00362
+           Sigma(v)           =                                          0.00362
+           Sigma-squared(u)   =                                          0.00478
+           Sigma(u)           =                                          0.00478
+Sigma = Sqrt[(s^2(u)+s^2(v))] =                                          0.09162
+Gamma = sigma(u)^2/sigma^2    =                                          0.56914
+Lambda = sigma(u)/sigma(v)    =                                          1.14932
+Var[u]/{Var[u]+Var[v]}        =                                          0.32432
+Variances averaged over observations
+--------------------------------------------------------------------------------
+Average inefficiency E[ui]     =                                         0.05515
+--------------------------------------------------------------------------------
+Stochastic Cost Frontier, e = v + u
+-----[ Tests vs. No Inefficiency ]-----
+Likelihood Ratio Test of Inefficiency
+Deg. freedom for inefficiency model                                            2
+Log Likelihood for OLS Log(H0) =                                     25152.86804
+LR statistic:
+Chisq = 2*[LogL(H0)-LogL(H1)]  =                                      1356.34131
+Kodde-Palm C*:       95%: 5.13838                                   99%: 8.27327
+Coelli (1995) skewness test on OLS residuals
+M3T: z                         =                                        31.03456
+M3T: p.value                   =                                         0.00000
+Final maximum likelihood estimates
+--------------------------------------------------------------------------------
+                         Deterministic Component of SFA
+--------------------------------------------------------------------------------
+               Coefficient Std. Error z value  Pr(>|z|)
+tc_control         0.35994    0.00700  51.446 < 2.2e-16 ***
+tc_control_sq      0.56807    0.01210  46.957 < 2.2e-16 ***
+--------------------------------------------------------------------------------
+                  Parameter in variance of u (one-sided error)
+--------------------------------------------------------------------------------
+               Coefficient Std. Error  z value  Pr(>|z|)
+Zu_(Intercept)    -4.60851    0.02460 -187.330 < 2.2e-16 ***
+Zu_log_size       -0.32509    0.01327  -24.496 < 2.2e-16 ***
+--------------------------------------------------------------------------------
+                 Parameters in variance of v (two-sided error)
+--------------------------------------------------------------------------------
+               Coefficient Std. Error z value  Pr(>|z|)
+Zv_(Intercept)    -5.62221    0.01731  -324.8 < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+--------------------------------------------------------------------------------
+Model was estimated on : Sep Fri 11, 2026 at 12:56
+Log likelihood status: successful convergence
+--------------------------------------------------------------------------------

@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived estimates, please cite both the software record and the paper."
+type: software
+title: "PA-Threat: analysis code for 'Improving existing protected areas could double their threat reduction impact'"
+authors:
+  - family-names: Vincent
+    given-names: Claire
+    affiliation: "Global Mammal Assessment Program, Department of Biology and Biotechnologies, Sapienza University of Rome"
+    orcid: "https://orcid.org/0000-0002-8171-1642"
+  - family-names: Cisneros
+    given-names: Elías
+    affiliation: "School of Economic, Political and Policy Sciences, The University of Texas at Dallas"
+  - family-names: Rondinini
+    given-names: Carlo
+    affiliation: "Global Mammal Assessment Program, Department of Biology and Biotechnologies, Sapienza University of Rome"
+    orcid: "https://orcid.org/0000-0002-6617-018X"
+version: 1.0.0
+date-released: 2026-10-02
+repository-code: "https://github.com/eliascis/pathreat"
+license: MIT
+keywords:
+  - protected areas
+  - biodiversity threats
+  - matching
+  - treatment effects
+  - stochastic frontier analysis
+  - IUCN Red List
+  - World Database on Protected Areas
+abstract: >-
+  R and Python code, matching and estimation pipeline, and derived estimate
+  tables for a global quasi-experimental evaluation of terrestrial protected
+  areas designated 2001-2020 against 14 mapped anthropogenic threats, with
+  protected-area-level stochastic frontier analysis of performance gaps and
+  species-range estimates for threatened terrestrial vertebrates.
+preferred-citation:
+  type: article
+  title: "Improving existing protected areas could double their threat reduction impact"
+  authors:
+    - family-names: Vincent
+      given-names: Claire
+    - family-names: Cisneros
+      given-names: Elías
+    - family-names: Rondinini
+      given-names: Carlo
+  year: 2026
+  notes: "Working paper under review."

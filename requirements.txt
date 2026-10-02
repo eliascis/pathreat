@@ -1,0 +1,6 @@
+# Python dependencies for the two raster helpers
+# (code/pathreat.data.land-vulnerability-download.py and
+#  code/pathreat.data.land-vulnerability-resample.py).
+# GDAL command-line tools (gdalbuildvrt, gdal_translate, gdalwarp; GDAL >= 3.8)
+# must also be on PATH; they are called via subprocess.
+requests>=2.31

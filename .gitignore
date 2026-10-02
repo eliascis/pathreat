@@ -1,0 +1,39 @@
+# Data: inputs and intermediates are not distributed (size and licences).
+# Only the directory skeleton, data/README.md and a few small derived files
+# listed below are tracked.
+data/**
+!data/README.md
+!data/**/
+!data/**/.gitkeep
+!data/store/Data_summary.xlsx
+!data/store/pathreat.analysis.byPA.est.Rds
+!data/store/pathreat.analysis.byPA-country-membership.Rds
+!data/store/fig.*.csv
+
+# generated figures and tables (reproduced by the scripts)
+pub/figures/*.jpg
+pub/figures/*.png
+pub/figures/presentation/*
+pub/tables/*.tex
+!pub/**/.gitkeep
+
+# large binary formats
+*.fst
+*.tif
+*.tiff
+*.nc
+*.gpkg
+
+# R and renv
+renv/library/
+renv/staging/
+renv/local/
+renv/sandbox/
+.Rproj.user/
+.Rhistory
+.RData
+Rplots.pdf
+
+# OS
+.DS_Store
+._*

@@ -1,0 +1,36 @@
+Headline statistics for manuscript text
+========================================
+
+Matched-sample audit
+--------------------
+Pre-balance: 12,128,798 observations; 6,064,399 pairs; 145 countries; 28,642 PAs; 6,064,399 treated 1-km pixels; 35,551 treated 25-km cells.
+Post-balance: 11,423,056 observations; 5,711,528 pairs; 107 countries; 22,090 PAs; 5,711,528 treated 1-km pixels; 32,992 treated 25-km cells.
+Indonesia pre-balance: 7,454 observations; 3,727 pairs; 4 PAs; 3,727 treated 1-km pixels; 20 treated 25-km cells.
+Indonesia post-balance: 7,454 observations; 3,727 pairs; 4 PAs; 3,727 treated 1-km pixels; 20 treated 25-km cells.
+Indonesia balance: average |SMD| = 0.039 against threshold 0.10; passes and is retained.
+
+Global and country effects
+--------------------------
+Composite mapped-pressure index: 30.6% lower inside PAs (ATT = -0.018, p = 0.009).
+Any-threat indicator: 8.0 percentage points lower inside PAs (p = 0.039).
+Individual indicators lower inside PAs: 6 at p < 0.05; 9 at p < 0.10.
+Composite estimation sample: 5,711,528 matched 1-km protected-control pairs.
+Composite country results: 106 estimated; 83 significant reductions; 10 significant increases; 13 null; 1 not estimated.
+Indonesia composite country effect: ATT = -0.049, p = 0.000, percentage difference = -78.0% (a statistically significant reduction).
+
+PA and stochastic-frontier results
+----------------------------------
+PA regression results: 22,090 records, 22,090 fitted coefficients, 18,684 with inference, 3,406 without inference.
+SFA sample: 22,090 PAs across 107 countries; summed PA area = 6,687,957.3 km2.
+SFA area-weighted totals: achieved reduction = 123,434.1 threat-index km2 (48.0%); underperformance = 133,488.0 threat-index km2 (52.0%); total potential reduction = 256,922.2 threat-index km2.
+SFA diagnostics: median underperformance = 0.041; median net residual = 0.031; 23.8% of PAs have a negative net residual.
+Country achieved-share ratio: median 34.7%; IQR 15.1--63.8%.
+
+Species and taxon results
+-------------------------
+Species coverage analysis: 7,165 threatened terrestrial vertebrate species.
+No mapped PA overlap: 1,378 species (19.2%).
+Mean mapped range shares: 28.6% protected and 71.4% unprotected.
+
+Range-based species effect sample: 3,310 species; median composite pressure difference = -25.1%.
+Eligible species by taxon: amphibian = 1,179; bird = 699; mammal = 814; reptile = 618.

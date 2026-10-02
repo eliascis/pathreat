@@ -1,0 +1,17 @@
+"variable","n_pairs","critical_gamma_05","critical_gamma_01"
+"built",937367,Inf,Inf
+"cropland",768245,Inf,Inf
+"planted",55321,1,1
+"pasture",5395189,Inf,Inf
+"oil",33,1,1
+"mining",9248,Inf,Inf
+"renewables",1518,Inf,Inf
+"roads",455159,Inf,Inf
+"powerlines",244161,Inf,Inf
+"fires",36438,Inf,Inf
+"swu",155410,Inf,Inf
+"dams",1163,1,1
+"light",1473555,Inf,Inf
+"def0120_parea",1466451,Inf,Inf
+"any_threat",1472091,Inf,Inf
+"threat_composite",5567418,Inf,Inf

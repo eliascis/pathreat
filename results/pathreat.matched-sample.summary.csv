@@ -1,0 +1,3 @@
+"stage","observations","matched_pairs","countries","protected_areas","treated_pixels","treated_cells_25km","indonesia_observations","indonesia_matched_pairs","indonesia_protected_areas","indonesia_treated_pixels","indonesia_cells_25km","indonesia_avg_abs_smd","balance_threshold","indonesia_passes_balance","indonesia_in_stage","manifest_contract_version","manifest_expected_strata","manifest_input_md5"
+"pre_balance",12128798,6064399,145,28642,6064399,35551,7454,3727,4,3727,20,0.0390964883216038,0.1,TRUE,TRUE,"pathreat_matching_v3",668,"0aa2290c09e61d9492ad2206f3ec6dbf"
+"post_balance",11423056,5711528,107,22090,5711528,32992,7454,3727,4,3727,20,0.0390964883216038,0.1,TRUE,TRUE,"pathreat_matching_v3",668,"0aa2290c09e61d9492ad2206f3ec6dbf"

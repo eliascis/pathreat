@@ -1,0 +1,35 @@
+{
+  "upload_type": "software",
+  "title": "PA-Threat: analysis code for 'Improving existing protected areas could double their threat reduction impact'",
+  "description": "<p>R and Python code, matching and estimation pipeline, and derived estimate tables for a global quasi-experimental evaluation of terrestrial protected areas designated 2001&ndash;2020 against 14 mapped anthropogenic threats. The pipeline matches 1-km grid cells inside protected areas to unprotected cells within country&ndash;biome strata, estimates average treatment effects with country and biome fixed effects, characterises heterogeneity by country, biome, biodiversity hotspot and protected-area type, fits protected-area-level regressions and a stochastic frontier model of performance gaps, and estimates species-range effects for threatened terrestrial vertebrates. Raw inputs are not redistributed (see data/README.md in the repository); derived estimate tables and per-figure source data are included.</p>",
+  "creators": [
+    {
+      "name": "Vincent, Claire",
+      "affiliation": "Sapienza University of Rome",
+      "orcid": "0000-0002-8171-1642"
+    },
+    {
+      "name": "Cisneros, Elías",
+      "affiliation": "The University of Texas at Dallas"
+    },
+    {
+      "name": "Rondinini, Carlo",
+      "affiliation": "Sapienza University of Rome",
+      "orcid": "0000-0002-6617-018X"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0",
+  "language": "eng",
+  "keywords": [
+    "protected areas",
+    "biodiversity threats",
+    "matching",
+    "treatment effects",
+    "stochastic frontier analysis",
+    "IUCN Red List",
+    "World Database on Protected Areas",
+    "conservation effectiveness"
+  ]
+}
