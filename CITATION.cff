@@ -17,6 +17,14 @@ authors:
 version: 1.0.0
 date-released: 2026-10-02
 repository-code: "https://github.com/eliascis/pathreat"
+doi: 10.5281/zenodo.23108161
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23108161
+    description: "Zenodo concept DOI (all versions)"
+  - type: doi
+    value: 10.5281/zenodo.23108162
+    description: "Zenodo version DOI for release v1.0.0"
 license: MIT
 keywords:
   - protected areas

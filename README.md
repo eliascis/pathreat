@@ -4,7 +4,7 @@ Analysis code and derived estimates for
 
 > Vincent, C., Cisneros, E., and Rondinini, C. (2026). *Improving existing protected areas could double their threat reduction impact.* Working paper under review.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23108161.svg)](https://doi.org/10.5281/zenodo.23108161)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Claire Vincent (Sapienza University of Rome), Elías Cisneros (The University of Texas at Dallas), Carlo Rondinini (Sapienza University of Rome).
@@ -157,7 +157,7 @@ The CSV of `pathreat.sfa.est` omits the PA size and IUCN category columns copied
 
 ## Citation
 
-Please cite the paper and the software record (see `CITATION.cff`). Zenodo concept DOI: `10.5281/zenodo.XXXXXXX`; the snapshot submitted with the manuscript is release `v1.0.0`.
+Please cite the paper and the software record (see `CITATION.cff`). Zenodo concept DOI (always the latest release): `10.5281/zenodo.23108161`. The snapshot submitted with the manuscript is release `v1.0.0`, version DOI `10.5281/zenodo.23108162`.
 
 ## Licence
 
