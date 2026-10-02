@@ -21,7 +21,7 @@ The balanced matched sample covers 5,711,528 matched pairs (11,423,056 observati
 |---|---|
 | `code/` | R scripts (and two Python raster helpers) for data preparation, matching, estimation, and the manuscript figures and tables. `code/tests/` holds a data-free unit test of the PA regression helper. |
 | `results/` | Canonical estimate tables as `.Rds` with CSV twins, plus `MANIFEST.csv` (file, rows, columns, md5). |
-| `data/` | Directory skeleton only. `data/README.md` lists every input, its source, version and licence. Three small derived files are tracked under `data/store/` (variable metadata, per-PA estimates, per-figure source data). |
+| `data/` | Directory skeleton only. `data/README.md` lists every input, its source, version and licence. A few small derived files are tracked under `data/store/`: variable metadata, per-PA estimates, PA-by-country membership, and per-figure source data. |
 | `renv.lock`, `SESSIONINFO.txt` | Exact R package versions and the geospatial library versions used. |
 | `requirements.txt` | Python dependency for the raster helpers. |
 
@@ -114,9 +114,11 @@ Three levels of reproduction are possible, depending on which inputs you have.
 
 **With the matched sample** (`data/store/pathreat.data.merge.matched.fst`, 1.6 GB, available from the corresponding author subject to the input providers' terms): all estimation scripts except `covbalance.R`, `threat-weights.R`, `PA-type.est.R`, `robustness.est.R`, `byspecies.R` and `randomrob.*`, plus `global.violins.fig.R`, `global.hetero.fig.R`, `global.delta_map.R`, `stats.fig.pa-by-year.R` and `bytaxa.R`. Loading the matched sample needs several GB of RAM.
 
+**With the unmatched analysis sample** (`data/store/pathreat.data.merge.unmatched.fst`, about 127 million pixels, not distributed; rebuilt by the data-preparation stage): `pathreat.analysis.bycountry.fig.R` (Fig. 3 country coverage and PA area), `bybiome.fig.R` (biome protection table), `species-pa.fig.R`, `PA-type.est.R` (category summary), `covbalance.R`, `robustness.est.R` and `randomrob.data.R`.
+
 **With the raw inputs** listed in `data/README.md`: the full pipeline. Data preparation needs about 200 GB of disk and 128 GB of RAM for `pathreat.data.merge.R`; species rasterisation and matching take hours on 8 cores.
 
-Set the number of worker processes with `PATHREAT_CORES` (default: all but one core, at most 8). The matching and species scripts also read `PATHREAT_MATCHING_CORES` and `PATHREAT_BYSPECIES_CORES`. Three scripts access the network: `pathreat.data.countries.R` downloads GADM boundaries, `pathreat.data.admin1.R` loads Natural Earth boundaries through `rnaturalearthhires`, and `pathreat.analysis.byspecies.fig.R` fetches species photos.
+Set the number of worker processes with `PATHREAT_CORES` (default: all but one core, at most 8). The matching and species scripts also read `PATHREAT_MATCHING_CORES` and `PATHREAT_BYSPECIES_CORES`. Three scripts access the network: `pathreat.data.countries.R` downloads GADM boundaries, `pathreat.data.land-vulnerability-download.py` downloads the land-cover vulnerability raster, and `pathreat.analysis.byspecies.fig.R` fetches species photos. `pathreat.data.admin1.R` reads Natural Earth boundaries bundled in the `rnaturalearthhires` data package, which is installed once.
 
 ## Software environment
 
@@ -151,9 +153,9 @@ Set the number of worker processes with `PATHREAT_CORES` (default: all but one c
 | `pathreat.covbalance.*`, `pathreat.matching_diagnostics.csv`, `pathreat.matched-sample.summary.csv` | Matching diagnostics and sample counts |
 | `pathreat.threat_composite_weights.*` | Country by threat: composite-index weights, prevalence, thresholds |
 | `pathreat.analysis.statistics.csv` / `.txt` | Headline statistics quoted in the paper |
-| `MANIFEST.csv` | Rows, columns, size and md5 of every table above |
+| `MANIFEST.csv` | Rows, columns, size and md5 of the canonical `.Rds` tables and their CSV twins |
 
-The CSV of `pathreat.sfa.est` omits the PA size and IUCN category columns copied from the WDPA; join on `wdpaid` to the WDPA for those attributes.
+The CSV of `pathreat.sfa.est` is a subset that omits the PA size and IUCN category columns copied from the WDPA; the `.Rds` versions of the SFA tables retain them because the aggregation scripts need PA area.
 
 ## Citation
 

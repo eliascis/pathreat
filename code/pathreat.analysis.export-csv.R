@@ -147,9 +147,9 @@ manifest_rows <- lapply(manifest_files, function(f) {
   rows <- NA_integer_
   cols <- NA_integer_
   if (grepl("\\.csv$", f)) {
-    df <- read.csv(f, nrows = 1)
+    df <- read.csv(f)
     cols <- ncol(df)
-    rows <- length(readLines(f)) - 1L
+    rows <- nrow(df)
   }
   data.frame(
     file = f,

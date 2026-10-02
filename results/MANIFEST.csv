@@ -3,7 +3,7 @@
 "results/pathreat.analysis.byPA.est.csv",22090,24,6594925,"65f7204eb1370a7e7e84bc750b0fe68f"
 "results/pathreat.analysis.hotspots.csv",32,14,5789,"c6413f3bb88bc3b75392b65b3eb4a448"
 "results/pathreat.analysis.hotspots.Rds",NA,NA,2681,"0c345b9305c75fa7cdb7559e2dc19739"
-"results/pathreat.bybiome.est.csv",254,15,48670,"5f25f4fbcd25f3e8a16a2a17ae128262"
+"results/pathreat.bybiome.est.csv",224,15,48670,"5f25f4fbcd25f3e8a16a2a17ae128262"
 "results/pathreat.bybiome.est.Rds",NA,NA,12475,"c3c21a9af431cb1ab836ab4d34880529"
 "results/pathreat.bycountry.est.csv",152,15,21600,"f595b081f7d8e2a8a5af8cd9a28b9cff"
 "results/pathreat.bycountry.est.Rds",NA,NA,66963,"9332f49d2bc1fc5fa76e590be7c868cf"
