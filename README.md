@@ -130,6 +130,15 @@ Set the number of worker processes with `PATHREAT_CORES` (default: all but one c
   renv::restore()
   ```
 
+  CRAN keeps binaries only for the current version of each package, so locked versions that have since been superseded are built from source. On macOS this needs the Xcode command-line tools and the GNU Fortran compiler from [mac.r-project.org/tools](https://mac.r-project.org/tools/) (RcppArmadillo, and through it `sfaR` and `MatchIt`, need Fortran). If compilers are not available, restore everything else at the locked versions and install current binaries of the superseded packages. This route was tested on macOS (arm64) on 2026-10-02: the unit test and the results-only scripts ran, and the global estimates from the matched sample reproduced the archived values to 1e-8.
+
+  ```r
+  superseded <- c("MatchIt", "RcppArmadillo", "curl", "ggtext", "gridtext", "hpa",
+                  "httr", "mnorm", "rnaturalearth", "sfaR", "texreg")
+  renv::restore(exclude = superseded)
+  install.packages(superseded, type = "binary")
+  ```
+
 - `rnaturalearthhires` is distributed through rOpenSci's r-universe rather than CRAN; the lockfile records that repository, and `renv::restore()` resolves it. Manual install: `install.packages("rnaturalearthhires", repos = c("https://ropensci.r-universe.dev", "https://cloud.r-project.org"))`.
 - System libraries for `sf` and `terra`: GDAL 3.8.5, GEOS 3.14.1, PROJ 9.5.1 were used (see `SESSIONINFO.txt`). `rsvg` needs librsvg.
 - Python 3 with `requests` (see `requirements.txt`) and the GDAL command-line tools (`gdalbuildvrt`, `gdal_translate`, `gdalwarp`) for the two land-vulnerability helpers.
